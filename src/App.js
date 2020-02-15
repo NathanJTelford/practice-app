@@ -1,17 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
 import { Link } from 'react-router-dom'
+import LogInModal from './Components/LogInModal/LogInModal'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      this is app
-      <Link to='/madLib'>Mad Lib</Link>
-      </header>
-    </div>
-  );
-}
 
+class App extends Component {
+  state = {
+
+  }
+
+
+  render()
+    {
+
+      return (
+        <div className="App">
+        <header className="App-header">
+        this is app
+        <LogInModal/>
+        <Link to='/madLib'>Mad Lib</Link>
+        </header>
+        </div>
+        );
+      }
+        
+      }
+      
 export default App;
